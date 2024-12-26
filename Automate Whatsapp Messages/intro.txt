@@ -1,0 +1,47 @@
+# WhatsApp Automation Script - intro.txt
+
+## Overview:
+This script automates the process of sending WhatsApp messages using the pywhatkit library. It allows you to send messages to a specified phone number at a given time in the future.
+
+## Features:
+- Automatically opens WhatsApp Web in your browser.
+- Sends a message to a specific phone number at the scheduled time.
+- Customizable to send multiple messages at different times.
+
+## Requirements:
+- Python 3.x
+- pywhatkit library
+- Active internet connection
+- WhatsApp account linked to WhatsApp Web
+
+## Installation:
+1. Install Python 3.x (if not already installed).
+2. Install the pywhatkit library:
+   ```
+   pip install pywhatkit
+   ```
+3. Ensure that you are logged into WhatsApp Web in your default browser.
+
+## Usage:
+1. Edit the script with your desired message, recipient phone number, and time for sending the message.
+2. Run the Python script:
+   ```
+   python automate_whatsapp.py
+   ```
+3. The script will automatically open WhatsApp Web, wait for the specified time, and send the message.
+
+## Example:
+In the script, you can set the following parameters:
+```python
+pywhatkit.sendwhatmsg("+917488343926", "Hello, this is an automated WhatsApp message.", 17, 47)
+```
+This will send a message to the phone number `+917488343926` at 5:47 PM.
+
+## Notes:
+- The time you provide should be a valid future time (1-2 minutes ahead).
+- The script uses the default web browser to open WhatsApp Web.
+- You may need to manually scan the QR code on WhatsApp Web for the first time.
+
+## License:
+This script is free to use and modify, but please respect the privacy and consent of recipients before sending messages.
+```
